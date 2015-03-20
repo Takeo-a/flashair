@@ -31,7 +31,7 @@
     isVideo = _.include(ext.video, fext);
     isJPEG = _.include(ext.jpeg, fext);
     src = "" + r_uri + "/" + fname;
-    year = ((fdate & 0xfc00) >> 9) + 1980;
+    year = ((fdate & 0xfe00) >> 9) + 1980;
     month = (fdate & 0x00e0) >> 5;
     day = fdate & 0x001f;
     hour = (ftime & 0xf800) >> 11;
